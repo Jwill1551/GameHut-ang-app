@@ -1,0 +1,44 @@
+.gm-section {
+    background-color: rgb(237, 237, 237);
+}
+
+.gm-card {
+    background-color: rgb(25, 25, 25);
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.gm-title {
+    font-size: 12pt;
+    font-weight: 200;
+}
+
+.card-link:hover {
+    opacity: 50%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gm-cd-btm {
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+.btn-edit, .btn-delete {
+    border: solid 2px rgb(25, 25, 25);
+}
+
+.btn-edit {
+    background-color: lightgreen;
+}
+
+.btn-delete {
+    background-color: salmon;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background-color: rgb(25, 25, 25);
+
+}

@@ -1,0 +1,16 @@
+<h2 class="text-center my-4"> {{user.First_name+" "+user.Last_name}} </h2>
+
+<div class="row music-box m-auto pb-5">
+    <div class="col"> <img class="" src="../../assets/images/user-icon.jpg" alt="{{user.id}}"></div>
+    <div class="col"> 
+        <div class="user-info mt-4">
+            <h3 class="user-details"> user Details </h3>
+            <div class="user-desc">
+                <p class="user-platform"><b>First Name:</b> {{user.First_name}} </p>
+                <p class="user-genre"><b>Last Name:</b> {{user.Last_name}} </p>
+                <p class="user-year"><b>Year:</b> {{user.Year}} </p>
+            </div>
+            <button class="btn btn-info" [routerLink]="['/display-users']"> Return Home </button>
+        </div>
+    </div>
+</div>

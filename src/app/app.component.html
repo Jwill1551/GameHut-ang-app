@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">{{title}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav w-100">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./display-games']">View Games</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./display-users']">View Profiles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./create-game']">New Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./create-user']">New Profile</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<h1 class="title text-center mt-5">Hi, Welcome to my Angular App 😎</h1>
+<p class="text-center">To see all the games or user profiles please click the buttons below: </p>
+
+<div class="btn-menu d-flex justify-content-evenly w-50 m-auto my-5">
+  <button class="btn btn-style" [routerLink]="['./display-games']">Games 🕹️</button>
+  <button class="btn btn-style" [routerLink]="['./display-users']">Users 👤</button>
+</div>
+
+<router-outlet></router-outlet>

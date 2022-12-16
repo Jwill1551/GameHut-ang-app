@@ -1,0 +1,17 @@
+<h2 class="text-center my-4"> {{game.Title}} </h2>
+
+<div class="row music-box m-auto pb-5">
+    <div class="col"> <img class="" src="../../assets/images/controller.jpg" alt="{{game.Title}}"></div>
+    <div class="col"> 
+        <div class="game-info mt-4">
+            <h3 class="game-details"> Game Details </h3>
+            <div class="game-desc">
+                <p class="game-platform"><b>Platform:</b> {{game.Platform}} </p>
+                <p class="game-genre"><b>Genre:</b> {{game.Genre}} </p>
+                <p class="game-year"><b>Year:</b> {{game.Year}} </p>
+                <p class="game-rating"><b>Rating:</b>  {{game.Rating}} </p>
+            </div>
+            <button class="btn btn-info" [routerLink]="['/display-games']"> Return Home </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="section usr-section pt-1">
+    <div class="container">
+        <h2 class="text-center my-4"> Catelog of users </h2>
+    
+        <div class="row d-flex justify-content-around">
+            <div class="card mb-4 pt-2 usr-card" *ngFor="let user of users" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title text-center usr-title">{{user.First_name + " " + user.Last_name}}</h5>
+                <a class="card-link" [routerLink]="['/show-user', user.Id]">
+                    <img class="card-img-top mb-3" src="../../assets/images/user-icon.jpg" alt="Card image cap">
+                </a>
+                <div class="usr-cd-btm px-2 py-2">
+                    <p class="card-text"><b>First Name: </b> {{user.First_name}}</p>
+                    <p class="card-text"><b>Last Name: </b> {{user.Last_name}}</p>
+                    <p class="card-text"><b>Email: </b> {{user.Email}}</p>
+                    <a [routerLink]="['/edit-user', user.Id]" class="btn btn-edit" style="margin-right: 20px;"> Edit </a>
+                    <a [routerLink]="['/delete-user', user.Id]" class="btn btn-delete"> Delete </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

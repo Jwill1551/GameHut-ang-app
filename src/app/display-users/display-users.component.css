@@ -1,0 +1,13 @@
+.usr-section {
+    background-color: rgb(235, 183, 183);
+}
+
+.btn-edit, .btn-delete {
+    border: solid 2px rgb(25, 25, 25);
+    background-color: transparent;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background-color: rgb(25, 25, 25);
+    color: white;
+}

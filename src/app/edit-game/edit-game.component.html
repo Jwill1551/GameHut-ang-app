@@ -1,0 +1,27 @@
+<h2 class="text-center"> You are editing "{{selectedGame.Title}}": </h2>
+
+<div class="container edit-gm-section">
+    <form #editForm = "ngForm" (ngSubmit)="editGame()">
+        <div class="form-group">
+          <label class="form-label" for="title">Title</label>
+          <input type="text" class="form-control" [(ngModel)]="selectedGame.Title" name="title" id="title" aria-describedby="title">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="platform">Platform</label>
+          <input type="text" class="form-control" [(ngModel)]="selectedGame.Platform" name="platform">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="genre">Genre</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedGame.Genre" name="genre" aria-describedby="genre">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="year">Year</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedGame.Year" name="year" aria-describedby="year">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="rating">Rating</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedGame.Rating" name="rating" aria-describedby="rating">
+        </div>
+        <button routerLink="/display-games" type="submit" class="btn btn-primary my-3">Submit</button>
+    </form>
+</div>

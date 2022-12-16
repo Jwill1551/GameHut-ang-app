@@ -1,0 +1,16 @@
+.btn-style {
+    background-color: slategray;
+    color: white;
+} 
+
+.btn-style:hover {
+    background-color: slateblue;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: gainsboro;
+    color: black;
+}

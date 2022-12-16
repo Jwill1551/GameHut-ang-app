@@ -1,0 +1,19 @@
+<h2 class="text-center"> You are editing the user "{{selectedUser.First_name+" "+selectedUser.Last_name}}": </h2>
+
+<div class="container edit-gm-section">
+    <form #editForm = "ngForm">
+        <div class="form-group">
+          <label class="form-label" for="title">First Name</label>
+          <input type="text" class="form-control" [(ngModel)]="selectedUser.First_name" name="first" id="title" aria-describedby="title">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="title">Last Name</label>
+          <input type="text" class="form-control" [(ngModel)]="selectedUser.Last_name" name="last" id="title" aria-describedby="title">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="genre">Email</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedUser.Email" name="email" aria-describedby="genre">
+        </div>
+        <button routerLink="/display-users" type="submit" (click)="editUser()" class="btn btn-primary my-3">Submit</button>
+    </form>
+</div>

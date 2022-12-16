@@ -1,0 +1,27 @@
+<h2 class="text-center"> Please Create the Game Below: </h2>
+
+<div class="container edit-gm-section">
+    <form #editForm = "ngForm">
+        <div class="form-group">
+          <label class="form-label" for="title">Title</label>
+          <input type="text" class="form-control" [(ngModel)]="this.title" name="title" id="title">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="platform">Platform</label>
+          <input type="text" class="form-control" [(ngModel)]="this.platform" name="platform">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="genre">Genre</label>
+            <input type="text" class="form-control" [(ngModel)]="this.genre" name="genre">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="year">Year</label>
+            <input type="text" class="form-control" [(ngModel)]="this.year" name="year">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="rating">Rating</label>
+            <input type="text" class="form-control" [(ngModel)]="this.rating" name="rating">
+        </div>
+        <button (click)="newGame()" routerLink="/display-games" type="button" class="btn btn-primary my-3">Submit</button>
+    </form>
+</div>
