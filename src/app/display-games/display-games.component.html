@@ -7,7 +7,7 @@
                 <div class="card-body">
                 <h5 class="card-title text-center gm-title">{{game.Title}}</h5>
                 <a class="card-link" [routerLink]="['/show-game', game.Id]">
-                    <img class="card-img-top mb-3" src="../../assets/images/controller.jpg" alt="Card image cap">
+                    <img class="card-img-top mb-3" src="{{'https://picsum.photos/id/'+game.Id+'7/200/300'}}" alt="Card image cap">
                 </a>
                 <div class="gm-cd-btm px-2 py-2">
                     <p class="card-text"><b>Platform: </b> {{game.Platform}}</p>
